@@ -1,283 +1,355 @@
-*{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    border: border-box;
-}
-.navbar{
-    height: 60px;
-    background-color: #0F1111;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-/** Box 1 **/
-.nav-logo{
-    height: 50px;
-    width: 100px;
-}
-.logo{
-    background-image: url(images/amazon_logo.png);
-    background-size: cover;
-    height: 50px;
-    width: 100%;
-}
-.border{
-    border: 1.5px solid transparent;
-}
-.border:hover{
-    border: 1.5px solid white;
-}
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo">
+            </div>
+        </div>
 
-/** Box 2 **/
-.adr-1{
-    color: #cccccc;
-    font-size: .85rem;
-    margin-left: 15px;
-}
-.adr-2{
-font-size: 1rem;
-margin-left: 5px;
-}
-.adr-icon{
-    display: flex;
-}
+        <div class="nav-adr border">
+            <p class="adr-1">Deliver to</p>
+            <div class="adr-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="adr-2">India</p>
+            </div>
+        </div>
 
-/** Box 3 **/
-.nav-search{
-    display: flex;
-    justify-content: space-evenly;
-    width: 620px;
-    height: 40px;
-    border-radius: 3px;
-}
-.search-input{
-    width: 100%;
-    border: none;
-    text-align: left;
-    text-indent: 1em;
-}
+        <div class="nav-search">
+           <select class="search-select">
+            <option>All</option>
+           </select>
+           <input placeholder="Search Amazon" class="search-input">
+           <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+           </div>
+        </div>
 
-.search-icon{
-    width: 45px;
-    background-color: #febd69;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    color: #0F1111;
+        <div class="nav-signin border">
+            <p><span class="span1">Hello, sign in</span></p>
+            <p class="nav-signin-1">Account & List</p>
+        </div>
 
-}
-.search-select{
-    width: 70px;
-    text-align: center;
-    color: #555;
-    background-color: #f3f3f3;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border: none;
-}
+        <div class="nav-signin border">
+            <p><span class="span1">Returns</span></p>
+            <p class="nav-signin-1">& Orders</p>
+        </div>
+       
+        <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+        </div>
+        
+    </div>
+    <div class="panelbar">
+        <div class="panel-menu">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-options">
+            <p>Today's Deal</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+        <div class="panel-deals">
+            Shop Deals in Electronics
+        </div>
+    </div>
+    <div class="hero-section">
+        <p class="hero-msg">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2 class="category-title">New year, new supplies</h2>
+                <div class="box-image" style="background-image: url('images/NEW_YEAR.jpg');"></div>
+                <p class="category-botoom-text">Shop Office Products</p>
+            </div>
+        </div>
 
-.nav-search:hover{
-    border: 2px solid orange;
-}
+        <div class="box2 box">
+            <div class="box-content">
+                <h2 class="category-title">Deals in PCs</h2>
+                <div class="box-image" style="background-image: url('images/Deals_in_PCs.jpg');"></div>
+                <p class="category-botoom-text">Shop now</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2 class="category-title">Toys under $25</h2>
+                <div class="box-image" style="background-image: url('images/toys.jpg');"></div>
+                <p class="category-botoom-text">Shop now</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2 class="category-title">Lunar New Year</h2>
+                <div class="box-image" style="background-image: url('images/LUNAR_NEW_YEAR.jpg');"></div>
+                <p class="category-botoom-text">Shop now</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <h2 class="category-title">New year, new supplies</h2>
+                <div class="box-image" style="background-image: url('images/NEW_YEAR.jpg');"></div>
+                <p class="category-botoom-text">Shop Office Products</p>
+            </div>
+        </div>
 
+        <div class="box2 box">
+            <div class="box-content">
+                <h2 class="category-title">Deals in PCs</h2>
+                <div class="box-image" style="background-image: url('images/Deals_in_PCs.jpg');"></div>
+                <p class="category-botoom-text">Shop now</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2 class="category-title">Toys under $25</h2>
+                <div class="box-image" style="background-image: url('images/toys.jpg');"></div>
+                <p class="category-botoom-text">Shop now</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2 class="category-title">Lunar New Year</h2>
+                <div class="box-image" style="background-image: url('images/LUNAR_NEW_YEAR.jpg');"></div>
+                <p class="category-botoom-text">Shop now</p>
+            </div>
+        </div>
+    </div>
 
-/** Box 4 **/
-.span1{
-    font-size: 0.7rem;
-}
+    <footer>
+        <div class="footer-panel1">
+            Back to top
+        </div>
+        <div class="footer-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>›See More Make Money with Us</a>
+            </ul>
+  
+            <ul>
+                <p> Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>About Amazon</a>
+                <a>Amazon Assistant</a>
+                <a>Help</a>
+            </ul>
+  
+        </div>
+        <div class="footer-panel3">
+            <div class="logo1"></div>
+        </div>
 
-.nav-signin-1{
-    font-size: 0.85rem;
-    font-weight: 700;
-}
-
-/** Box 5 **/
-.nav-cart i {
-    font-size: 30px;
-}
-
-.nav-cart{
-    font-size: 0.85rem;
-    font-weight: 700;
-}
-
-/**Panelbar**/
-.panelbar{
-    height: 40px;
-    width: 100%;
-    display: flex;
-    background-color: #222f3d;
-    color: #fff;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.panel-options p {
-    display: inline;
-    margin-left: 15px;
-}
-.panel-options p:hover {
-    border: 1.5px solid white;
-}
-
-.panel-menu:hover {
-    border: 1.5px solid white;
-}
-.panel-deals:hover {
-    border: 1.5px solid white;
-}
-.panel-options{
-    width: 70%;
-    font-size: 0.85rem;
-}
-.panel-deals{
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-.hero-section{
-    background-image: url(images/Hero.jpg);
-    height: 350px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end
-}
-.hero-msg{
-    background-color: white;
-    color: #0F1111;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    width: 95%;
-    margin-bottom: 25px;
-}
-.hero-msg a{
-    color: #007185;
-}
-.shop-section{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-background-color: #f0eded;
-}
-.box{
-    /*border: 2px solid black;*/
-    height: 380px;
-    width: 23%;
-    padding: 20px 0px 15px;
-    margin-top: 15px;
-    background-color: #fff;
-}
-.box-image{
-    height: 300px;
-    background-size: cover;
-    margin-top: 1rem;
-    margin-bottom: 1 rem;
-}
-
-.box-content{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.category-botoom-text{
-    color: blue;
-    font-size: .75rem;
-    margin-top: 1rem;
-}
-.category-botoom-text:hover{
-    color: red;
-}
-.category-title{
-    font-size: 1.3rem;
-}
-footer{
-    margin-top: 15px;
-}
-.footer-panel1{
-    background-color: #37475a;
-    color: #fff;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.85rem;
-}
-.footer-panel2{
-    background-color: #232F3E;
-    height: 318px;
-    color: #fff;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-ul{
-margin-top: 20px;
-}
-
-ul a{
-    display: block;
-    font-size: 0.85rem;
-    margin-top: 10px;
-    color: #dddddd;
-    font-family: inherit;
-}
-.footer-panel3{
-    height: 68px;
-    background-color: #232F3E;
-    color: #fff;
-    border-top: 0.5px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo1{
-    background-image: url(images/amazon_logo.png);
-    background-size: cover;
-    height: 50px;
-    width: 100px;
-}
-.footer-panel4{
-    height: 400px;
-    background-color: rgb(19, 26, 34);
-    color: #e2d9d9;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-table{
-    width: 75%;
-}
-.table-row p{
-    font-weight: 700;
-    font-size: .85rem;
-}
-.table-row a{
-    font-weight: 700;
-    font-size: .75rem;
-    line-height: 130%;
-}
-.span2{
-    font-weight: 1;
-    color: #999;
-}
-.table-space{
-    width: 3%;
-}
-.footer-panel4-end{
-    margin-top: 15px;
-}
-.footer-panel4-end a{
-    margin:5px;
-    font-size: .75rem;
-}
-.footer-panel4-end p{
-    font-size: .75rem;
-    margin-left: 50px;
-}
+        <div class="footer-panel4">
+            <table class="footer-table">
+                <tr class="table-row">
+                    <td>
+                        <a>
+                            Amazon Music<br><span class="span2">Stream millions<br>of songs</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            Amazon Ads<br><span class="span2">Reach customers<br>wherever they<br>spend their time</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td>
+                        <a>
+                            Amazon Music<br><span class="span2">Stream millions<br>of songs</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            Amazon Ads<br><span class="span2">Reach customers<br>wherever they<br>spend their time</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td>
+                        <a>
+                            Amazon Music<br><span class="span2">Stream millions<br>of songs</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            Amazon Ads<br><span class="span2">Reach customers<br>wherever they<br>spend their time</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td>
+                        <a>
+                            Amazon Music<br><span class="span2">Stream millions<br>of songs</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            Amazon Ads<br><span class="span2">Reach customers<br>wherever they<br>spend their time</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>
+                    <td class="table-space"></td>
+                    <td>
+                        <a>
+                            6pm<br><span class="span2">Score deals<br>on fashion<br>brands</span>
+                        </a>
+                    </td>                    
+                </tr>
+            </table>
+            <div class="footer-panel4-end">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+                <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
