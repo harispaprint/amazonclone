@@ -224,8 +224,9 @@ margin-top: 20px;
 ul a{
     display: block;
     font-size: 0.85rem;
-    margin-top: 6px;
+    margin-top: 10px;
     color: #dddddd;
+    font-family: inherit;
 }
 .footer-panel3{
     height: 68px;
@@ -243,7 +244,7 @@ ul a{
     width: 100px;
 }
 .footer-panel4{
-    height: 320px;
+    height: 400px;
     background-color: rgb(19, 26, 34);
     color: #e2d9d9;
     display: flex;
@@ -260,7 +261,7 @@ table{
 .table-row a{
     font-weight: 700;
     font-size: .75rem;
-    line-height: 110%;
+    line-height: 130%;
 }
 .span2{
     font-weight: 1;
@@ -268,4 +269,15 @@ table{
 }
 .table-space{
     width: 3%;
+}
+.footer-panel4-end{
+    margin-top: 15px;
+}
+.footer-panel4-end a{
+    margin:5px;
+    font-size: .75rem;
+}
+.footer-panel4-end p{
+    font-size: .75rem;
+    margin-left: 50px;
 }
